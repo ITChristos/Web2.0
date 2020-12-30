@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+
+    <title>Blog</title>
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="CCNA, Network+, Security+, MTA, Linux+">
+    <meta name="description" content="Networking Certification study community">
+    <meta name="author" content="Christos Panas">
+    <meta http-equiv="refresh" content="300">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib\bootstrap\dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="site.css" />
+    <link rel="shortcut icon" href="lib/favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body style="padding-top: 80px; width: 70%">
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="position:fixed; top: 0; width: 100%; min-width: 100px; background-color: #bebebe">
+            <div class="container">
+
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark " href="Blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="About.html">About Me</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark " href="Form.html">Guest Book</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <div class="dropdown" style="padding-top: 5px">
+                                <button class="dropbtn" onclick="myFunction()" @*style="padding-top: 5px" *@>
+                                        Certifications
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <a class="nav-link text-dark" target="_blank" a href="https://learningnetwork.cisco.com/s/ccna">CCNA</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://www.comptia.org/certifications/network">Network+</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://www.comptia.org/certifications/security">Security+</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://www.comptia.org/certifications/linux">Linux+</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://docs.microsoft.com/en-us/learn/certifications/">Microsoft</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://aws.amazon.com/certification/">Amazon</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="margin-left: 15%; margin-right: 15%;">
+
+        <h1>IPv6 Adoption</h1>
+
+        <div style=" background-color: lightslategrey; border-radius: 50px; padding: 20px ">
+            <p>
+                The world has run out of IPv4 addresses. This is due to several reasons including limited address space, poor allocations of address blocks, and lack of foresight when creating the IPv4 Protocol. The answer to IPv4 depletion was the creation of a new
+                routed protocol, IPv6, by the Internet Engineering Task Force (IETF.) IPv6 includes many improvements over IPv4 along with many challenges. Improvements include having a much larger address space, decreased routing overhead, security improvements,
+                and improvements in some configuration methods. In this paper, we will discuss the history of IPv6, compare IPv4 and IPv6, examine security improvements, and view the adoption of IPv6 by using examples of successful enterprises.
+            </p>
+        </div>
+
+        <h2 style="padding-top:50px ">History</h2>
+
+        <div style="background-color: lightslategrey; border-radius: 50px; padding: 20px ">
+            <p>
+                Internet Protocol version 6 (IPv6) was first drafted in December 1998 by the IETF in the draft standard RFC 2460: <i>IPv6 Specification</i> (Deering, 1998.) In 1999 the first IPv6 tunnel broker was implemented by Ivano Guardini of CSELT,
+                which is an Italian research center for telecommunications. Then in 2001, Cisco Systems introduced IPv6 support on Cisco IOS routers and Layer 3 switches. (IPv6, 2014.) On February 4, 2008, IANA added AAAA records for the IPv6 addresses
+                of six root name servers, which made it possible to resolve domain names using only IPv6. (IPv6, 2014.) This in my opinion is the start of IPv6 becoming an accepted protocol.
+            </p>
+
+            <p>
+                Coinciding closely with the World IPv6 Launch day on June 6, 2012, hosted by the Internet Society, was the depletion event that made the world realize the inevitability of IPv6 adoption. In February 2011, the Internet Assigned Numbers Authority (IANA)
+                allocated the final IPv4 address blocks from the addressing space. IANA has worked with the different Regional Internet Registries (RIR) to recycle unused IPv4 address blocks to extend the life of IPv4 as much as possible. After the recycled
+                blocks have been allocated to RIRs, IANA will have no more IPv4 addresses left to assign. (Meynell, 2019) If the world has not made a transition to IPv6 by then, the growth of the internet will be stifled.
+            </p>
+        </div>
+
+        <h2 style="padding-top:50px ">Comparison of IPv4 and IPv6</h2>
+
+        <div style="background-color: lightslategrey; border-radius: 50px; padding: 20px ">
+            <p>
+                IPv6 is like IPv4 in many ways, in essence, they are both used to identify hosts connected to a network. On the other hand, the IETF implemented many improvements and changes to IPv6 based on lessons learned from IPv4 over the years.
+            </p>
+
+            <h4>Similarities</h4>
+
+            <p>
+                IPv4 and IPv6 are both routed protocols that contain destination addresses and use packet switching (Grinius, 2020.) They also both use a counter to ensure packets take a maximum number of hops on the way to the destination to ensure packets do not loop
+                indefinitely (Grinius, 2020.) There are similarities in the types of addresses that both versions support, both have unicast, multicast, link-local, loopback, and unspecified address types.
+            </p>
+
+            <h4>Differences</h4>
+
+            <p>
+                The differences between the two protocols are more pronounced. The most notable difference is the size of the address space provided by each. IPv4 is a 32-bit address expressed in Dotted Decimal Notation (DDN) with a total address space of 4.3 billion
+                addresses. When IPv4 was introduced by DARPA in the 1980s, nobody thought that 4.3 billion addresses would run out. Some estimate that only 14% of all available addresses in use (Hoffman, 2020.) Combine that with an exponentially growing
+                number of internet devices and a much larger address space is needed (Vajrami, 2019.) IPv6 is a 128-bit address expressed in hexadecimal “hextets” separated by colons, with 340 undecillion global unique addresses (Grinius, 2020.) This
+                is enough addresses to assign an IP to every atom on earth (Meynell, 2019.)
+            </p>
+
+            <p>
+                Several new types of addresses were implemented in IPv6 to reduce network loads across the Internet. IPv6 has three types of addresses in the ecosystem: Unicast, Multicast, and Anycast (Vajrami, 2019.)
+            </p>
+
+            <h3>Unicast</h3>
+
+            <p>
+                Unicast IPv6 addresses can be divided further into five types. The first type is a Global Unique Address. These are routable on the Internet and are like public IPv4 addresses. An example would be 2001:581:F3D1:241F::/64. Link-local addresses are required
+                on every IPv6 enabled interface but are not globally routable; they usually begin with FE80::/10. Originally site-local addresses were defined but are deprecated (see RFC 3879.) Loopback addresses are written as ::1/128 in IPv6 and are
+                like 127.x.x.x in IPv4. Finally, Unique local addresses are only routable within the scope of an enterprise and are like private IPv4 addresses; they usually begin with FC00::/7 (Vajrami, 2019.)
+            </p>
+
+            <h3>Multicast</h3>
+
+            <p>
+                Multicast packets send packets from one source to many. To support IPv6 multicast, an interface must support Multicast Listener Discovery (MLD) protocol and Neighbor Discovery (Deering, 2017.) A simple multicast packet flow starts with an Internet Control
+                Message Protocol version 6 (ICMPv6) host solicitation to the router(s) multicast group. The router returns a Router Advertisement (RA) packet that tells the host the configuration parameters for the multicast group. The multicast range
+                is FF00::/8 (Vajrami, 2019)
+            </p>
+
+            <h3>Anycast</h3>
+
+            <p>
+                The anycast address is like multicast. The difference is that a packet from a host goes to a single selected destination based on the least expensive routing metric (Vajrami, 2019.)
+            </p>
+        </div>
+
+        <h2 style="padding-top:50px ">Security Improvements</h2>
+
+        <div style="background-color: lightslategrey; border-radius: 50px; padding: 20px ">
+            <p>
+                One benefit of creating a new IP protocol stack is that we can learn lessons from the predecessor, IPv4, which was not designed with security in mind, per se. IPv6 improves on this by building in an option that provides confidentiality, authentication,
+                and data integrity called IPsec (short for IP security.) With IPsec built-in, IPv6 is much more robust and can run end to end encryption (Grinius, 2019.) This is especially important for Internet of Things (IoT) devices that have a bare-bones
+                kernel and rely on IP for security.
+            </p>
+
+            <h4>IPsec</h4>
+
+            <p>
+                There is a wide range of security technologies in the Internet protocol suite. These include Transport Layer Security (TLS), Secure Shell (SSH), and IP security (IPsec), to name some. When IPv6 was first rolled out, IPsec was included as a <i>must</i>,
+                to use IETF terminology, and key management specified Internet Key Exchange (IKEv2.) RFC 6434 updated the recommendation to a <i>should </i>for all IPv6 nodes (Jankiewicz, 2011) and persists through the best current practice, RFC 8504
+                (Chown, 2019.) IPsec provides authentication and encryption using Encapsulating Security Payload (ESP) and Authentication Headers (AH) (Vajrami, 2019.)
+            </p>
+
+            <h4>SEND</h4>
+
+            <p>
+                Secure Neighbor Discovery (SEND) and Cryptographically Generated Address (CGA) give us a secure way to exchange Neighbor Discovery messages. SEND authenticates devices at connection time, making naming-based attacks like Address Resolution Protocol (ARP)
+                poisoning more difficult (Jankiewicz, 2011)
+            </p>
+
+            <h4>Implicit Security</h4>
+
+            <p>
+                The way that IPv6 is implemented reduces the use of address translation technologies, makes scanning and identification more difficult and ensures unique global addresses. Since the IPv6 address space is large enough to guarantee unique addresses for
+                every device, it makes the use of address translation technologies unneeded. This makes identifying endpoints much easier (Deering, 2017.) Since empirical evidence shows that IPv6 addresses often follow patterns, nodes typically follow
+                low-byte addresses like 2001:db8::1 (Meynell, 2019) it may be just as easy to predict IPv6 addresses as IPv4. The opposite is true for clients, which have randomized addresses of the enormous address space. During the IPv4-IPv6 transition,
+                many tunneling technologies have been introduced with a slew of vulnerabilities. Since 2015, native or dual-stack IPv6 is possible and should be used instead of tunneling (Martin, 2015)
+            </p>
+        </div>
+
+        <h2 style="padding-top:50px ">Transition</h2>
+
+        <div style="background-color: lightslategrey; border-radius: 50px; padding: 20px ">
+            <p>
+                One of the main obstacles to IPv6 adoption is the perceived complexity, and the estimated cost to adopt IPv6. The reality is most of the burden lies on backbone providers to implement IPv6 infrastructure and develop robust protocols to enable their clients
+                to take advantage of IPv6. Many companies have already successfully implemented IPv6.
+            </p>
+
+            <h4>Complexity</h4>
+
+            <p>
+                The stigma of complexity comes from the long and hard to memorize IPv6 addresses. Successful implementation has shown that educating IT employees on IPv6 mitigates the reluctance to adopt a more complex scheme. By carefully planning you can safely run
+                both protocols side by side (Sophos, 2020.) There are two configuration methods to autoconfigure IPv6 addresses which make adopting much easier. Stateful Address Autoconfiguration (DHCPv6) and Stately Address Autoconfiguration (SLAAC)
+                both ensure autoconfiguration that guarantees unique and secure addresses. Also, Duplicate Address Detection (DAD) is required by IPv6 which checks to ensure uniqueness before configuring an address (Jankiewicz, 2011.) According to Andrew
+                Dul, a Network Architect at EGATE Networks, implementing IPv6 simplified addressing especially with identifying VLANs (Bly, 2016.)
+            </p>
+
+            <h4>Cost</h4>
+
+            <p>
+                Given that four of five RIRs are exhausted of IPv4 addresses, there is a secondary market for IPv4, making it increasingly more expensive to implement than Ipv6 (Sophos, 2016.) Dan Alexander, a Network Engineer of Comcast says that it is cheaper to deploy
+                v6 when looking at the number of devices needed to provision and the cost to continue to buy and propagate v4 (Bly, 2016.) Even RFC 6555 works with a slight bias towards IPv6 by giving AAAA queries a slight head start over the query for
+                IPv4 (Martin, 2015.)
+            </p>
+        </div>
+
+        <h2 style="padding-top:50px; ">Conclusion</h2>
+
+        <div style="background-color: lightslategrey; border-radius: 50px; padding: 20px ">
+            <p>
+                As you can see, the transition to IPv6 is inevitable. To responsibly move to a post IPv4 Internet, it is the responsibility of every IT professional to educate themselves on the intricacies of IPv6 so that they can successfully
+                <span class=GramE>dual-stack</span> an IPv4 and IPv6 network without opening vulnerabilities. Ultimately IPv6 streamlines the packet routing process with simplified packets, flow labeling capability, and simpler autoconfiguration (Deering,
+                2017.) IPv6, through implementation and experience, will make our Internet more secure and more efficient.
+            </p>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted ">
+        <div class="container ">
+            &copy; 2020 - ITChristosWebApplication - <a asp-area=" " asp-page="/Privacy ">Privacy</a> | <a href="mailto:georjiu@hotmail.com " title="georjiu@hotmail.com ">Contact Me</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js "></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="~/js/site.js " asp-append-version="true "></script>
+
+</body>
+
+</html>

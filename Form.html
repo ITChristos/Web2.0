@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <title>Visitors</title>
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="CCNA, Network+, Security+, MTA, Linux+, Cybersecurity">
+    <meta name="description" content="Cybersecurity Professional Job Outline">
+    <meta name="author" content="Christos Panas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib\bootstrap\dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="site.css" />
+    <link rel="shortcut icon" href="lib/favicon.ico" type="image/x-icon" />
+
+</head>
+
+
+<body style="padding-top: 80px;">
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="position:fixed; top: 0; width: 100%; min-width: 100px; background-color: #bebebe">
+            <div class="container">
+
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark " href="Blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="About.html">About Me</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark " href="Form.html">Guest Book</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <div class="dropdown" style="padding-top: 5px">
+                                <button class="dropbtn" onclick="myFunction()" @*style="padding-top: 5px" *@>
+                                        Certifications
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <a class="nav-link text-dark" target="_blank" a href="https://learningnetwork.cisco.com/s/ccna">CCNA</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://www.comptia.org/certifications/network">Network+</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://www.comptia.org/certifications/security">Security+</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://www.comptia.org/certifications/linux">Linux+</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://docs.microsoft.com/en-us/learn/certifications/">Microsoft</a>
+                                    <a class="nav-link text-dark" target="_blank" a href="https://aws.amazon.com/certification/">Amazon</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Sign in to my visitors log!</h1>
+
+    <img src="Images/Phone.jpg" alt="Phone booth" style="width: 45%; height: auto; float: right; padding-right: 50px; margin-bottom: 100px">
+
+    <div style="margin-left: 100px;">
+
+
+        <form action="action_page.php" target="_self" method="POST" autocomplete="on" accept-charset="utf-8">
+
+
+            <!-- First name / Last name -->
+
+            <fieldset>
+                <legend>Personals:</legend>
+
+                <h2>Name</h2>
+
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"> <br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"> <br>
+
+                <label for="lname">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="user@domain.com"> <br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+                <label for="bday">Birthdate:</label><br>
+                <input type="date" id="bday" name="bday"><br>
+
+                <hr>
+
+                <!-- Gender -->
+                <h2>Gender</h2>
+                <input type="radio" id="gender" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="gender" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <hr>
+
+
+                <!-- Checkbox -->
+
+                <h2>Certifications you hold</h2>
+
+                <input type="checkbox" id="certification1" name="certification1" value="CCNA">
+                <label for="certification1"> I have my CCNA</label><br>
+                <input type="checkbox" id="certification2" name="certification2" value="Network+">
+                <label for="certification2"> I have my Network+</label><br>
+                <input type="checkbox" id="certification3" name="certification3" value="Security+">
+                <label for="certification3"> I have my Security+</label><br>
+                <input type="checkbox" id="certification4" name="certification4" value="Linux+">
+                <label for="certification4"> I have my Linux+</label><br>
+                <label for="other"> Other:</label>
+                <input type="text" id="other" name="other"><br>
+
+                <hr>
+
+                <!-- Multiple-option select list -->
+
+                <h2>Reason for visiting</h2>
+
+                <label for="reason">Why did you come here?</label>
+                <select id="reason" name="reason" size="5" multiple>
+                <option value="career">To further my career</option>
+                <option value="curiosity">To pursue new interests</option>
+                <option value="school">A school project</option>
+                <option value="social">To find like-minded people</option>
+                <option value="other">Other</option>
+            </select><br>
+
+                <hr>
+
+            </fieldset>
+
+            <div>
+                <fieldset class="center">
+
+                    <legend>What's your story?</legend>
+
+                    <h2>Tell me about yourself!</h2>
+
+                    <textarea onClick="javascript: this.value=''" name="about_user" style="width:100%; height:100px;">About Yourself...</textarea><br>
+
+                    <hr>
+                </fieldset>
+            </div>
+            <!-- Button Element -->
+
+            <fieldset style="margin-bottom: 500px;">
+
+                <input type="submit" value="Submit">
+                <input type="reset">
+
+            </fieldset>
+    </div>
+
+    </form>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - ITChristosWebApplication - <a href="Privacy.html">Privacy</a> | <a href="mailto:georjiu@hotmail.com" title="georjiu@hotmail.com">Contact Me</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.btn-primary {
+    color: rgba(0, 0, 0, 0.2);
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    position: fixed;
+    top: 0;
+    background-color: #FFCB9A;
+    color: white;
+    border-color: #1861ac;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #45A29E;
+}
+
+.active {
+    background-color: #FFCB9A;
+}
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Sticky footer styles
+  -------------------------------------------------- */
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+
+/* Sticky footer styles
+  -------------------------------------------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 16px;
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*white-space: nowrap;*/
+    line-height: 60px;
+    /* Vertically center the text there */
+}
+
+
+/* Text CSS */
+
+h1 {
+    color: #66FCF1;
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgba(193, 193, 193, 0.3);
+    border-radius: 25px 50px;
+}
+
+h2 {
+    color: #45A29E;
+    text-align: center;
+}
+
+h3 {
+    color: #C3073F;
+    text-align: center;
+}
+
+h4 {
+    color: #FFCB9A;
+    text-align: center;
+}
+
+p {
+    color: #C5C6C7;
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
+
+ul li {
+    color: #C5C6C7;
+}
+
+
+/* Make image transparent during mouseover */
+
+img:hover {
+    opacity: 0.6;
+}
+
+
+/* Center */
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Text Decoration Span classes*/
+
+span.boldtext {
+    font-weight: bold;
+}
+
+span.italictext {
+    font-style: italic;
+}
+
+
+/* FORMS  */
+
+form {
+    color: #FFCB9A;
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove;
+    width: 47%;
+    float: left;
+}
+
+
+/* Colors section:
+          #0B0C10		Dark Black				Background;
+          #1F2833		Dark Grey				HR; Table Borders; H1 Background
+          #C5C6C7		Light Grey				Normal Text;
+          #66FCF1		Seafoam Green			h1;
+          #45A29E		Dark Seafoam Green		h2; Navbar Button Hover
+          #3500D3		Neon Blue				
+          #C3073F		Rose Red				h3
+          #FFCB9A		Bronze					h4; table borders;
+          #DA7B93		Rose Pink
+          #8860D0		Vibrant Purple
+          #4F4A41		Dark Brown
+          #6E6658		Light Brown				Lists	
+          #333		Dark Grey				Navbar background
+          #f9f9f9		Alabaster				Dropdown Content
+  */
